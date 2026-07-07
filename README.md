@@ -1,6 +1,5 @@
 # HMA-Det: Heterogeneous Modality-Aware Optical-SAR Detection Framework for Remote Sensing Ship Detection
 
-# HMA-Det: Heterogeneous Modality-Aware Optical-SAR Detection Framework for Remote Sensing Ship Detection
 
 ### [**📝Paper**]() | [**🗃️Dataset**]()
 
@@ -35,25 +34,33 @@ data
 
 ![framework](figs/MOS-Ship-dataset.png)
 
+## Pipeline
 
+![framework](figs/overview.png)
 
+## Requirements
 
+### Installation
 
-
-
-## Installation
-
+```bash
 conda create -n hma python=3.8
+```
 
+```bash
 conda activate hma
+```
 
+```bash
 pip install -r requirements.txt
+```
 
 ## Training
-
+```bash
 python train.py --data MOS-Ship.yaml --epochs 100 --batch 16
+```
 
 ## Testing
+```bash
 python val.py --weights best.pt --data MOS-Ship.yaml
-
+```
 
